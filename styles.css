@@ -1,0 +1,171 @@
+﻿
+:root {
+    --color-drakblue: #1b1b32;
+    --color-darkgreen: #006400;
+    --color-green-alpha: #ffeedda11;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--color-seagreen) margin: 0;
+}
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: var(--color-darkgreen);
+        background-image: linear-gradient( 15deg, rgba(100, 100, 0, 0.8), rgba(10, 90, 90, 0.7) ), url(https://www.netsuite.com/portal/business-benchmark-brainyard/assets/img/bnr-grocery-770x490.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+h1 {
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 21px;
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100%;
+    margin: 32px auto 0;
+}
+
+@media (min-width: 580px) {
+    .container {
+        max-width: 780px;
+    }
+}
+
+.header {
+    padding: 0 6px;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.clue {
+    margin-left: 2px;
+    font-size: 20px;
+    color: #e4e4e4;
+}
+
+, text-center {
+    text-align: center;
+}
+
+form {
+    background: var(--color-green-alpha);
+    padding: 25px 6px;
+    border-radius: 3px;
+}
+
+@media (min-width: 500px) {
+    form {
+        padding: 25px;
+    }
+}
+
+.form-group {
+    margin: 0 auto 12px auto;
+    padding: 3px;
+}
+
+.form-fill {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 3px 7px;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s easse-in-out;
+}
+
+    .form-fill: focus {
+        border-color: #80bdff;
+        outline: 5;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    }
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 6px;
+    min-height: 12px;
+    min-width: 12px;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 6px;
+    resize: vertical;
+    border-radius: 3px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background: var(--color-darkgreen);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#creator {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
